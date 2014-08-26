@@ -70,8 +70,6 @@ class MybbStuff_Core_ClassLoader
 		if ($file = $this->findFile($name)) {
 			require_once $file;
 			return true;
-		} else {
-			die('Failed to load class!');
 		}
 		
 		return false;
